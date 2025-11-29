@@ -27,6 +27,9 @@ This project is perfect for beginners to understand **React State, Events, and L
 ## 📸 UI Preview
 
 
+![Counter Preview](./src/assets/1.png)
+
+
 
 
 
