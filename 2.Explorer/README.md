@@ -98,4 +98,4 @@ src/
 ![Project Preview](./src/assets/4.png)
 
 
-##✨ Made with ❤️ by Tosif Kureshi
+## ✨ Made with ❤️ by Tosif Kureshi
