@@ -78,14 +78,31 @@ export default function Footer() {
         }
         
         .footer-links a {
+            position: relative;
+            display: inline-block;
             text-decoration: none;
             color: #777;
             font-size: 15px;
             transition: 0.3s;
         }
-        
         .footer-links a:hover {
-            color: #3577f0;
+            color: #292930;
+        }
+        .footer-links a:hover:after {
+            width: 100%;
+            opacity: 1;
+            left: 0;
+        }
+        .footer-links a:after{
+            content:"";
+            height: 2px;
+            width: 0;
+            background-color: #292930;
+            position: absolute;
+            bottom: -2px;
+            right: 0;
+            opacity: 0;
+            transition: .5s;
         }
 
         .support-info li {

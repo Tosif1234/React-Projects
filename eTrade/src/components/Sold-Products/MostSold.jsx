@@ -68,7 +68,9 @@ export default function MostSold() {
   font-weight: 600;
   border-radius: 25px;
 }
-
+.text-purple{
+        color: #6D4DFC;
+}
 .sold-card {
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -118,7 +120,7 @@ export default function MostSold() {
               size={20}
               className="bg-purple text-white p-1 rounded-circle"
             />
-            This Week’s
+            Most Sold
           </h6>
           <h2 className="fw-bold display-6 mt-3">Most Sold in eTrade Store</h2>
         </div>

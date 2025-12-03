@@ -80,6 +80,7 @@ const Navbar = () => {
                     <li><a className="dropdown-item">Profile</a></li>
                   </ul>
                 </li>
+                <li className="nav-item"><a className="nav-link">Contact</a></li>
 
                 {/* 🔻 BLOG DROPDOWN */}
                 <li className="nav-item dropdown">

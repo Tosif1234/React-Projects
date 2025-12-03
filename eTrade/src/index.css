@@ -28,6 +28,35 @@ body {
 .dropdown-item:hover {
   background: #f4f6f9;
 }
+.navbar-nav .nav-link {
+  position: relative !important;
+  display: inline-block;
+  color: #000;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;        /* distance below */
+  left: 15%;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width .3s ease;
+}
+
+/* Hover underline */
+.navbar-nav .nav-link:hover::after {
+  width: 40px;        /* short underline like screenshot */
+}
+
+/* Keep underline on active page (Home) */
+.navbar-nav .nav-link.active::after {
+  width: 40px;
+}
+
+
 
 /* Arrow rotate */
 .dropdown-hover:hover .dropdown-toggle::after {
@@ -89,7 +118,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items:center ;
+  align-items: center;
 }
 
 .big-img {
@@ -230,9 +259,7 @@ body {
   height: 100%;
   position: relative;
   border-radius: 15px;
-
 }
-
 
 /* IMAGE BOX CONTAINER */
 .product-img-box {
@@ -380,6 +407,4 @@ body {
   color: #000;
 }
 
-
 /* Feedback */
-
