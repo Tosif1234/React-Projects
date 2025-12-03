@@ -1,0 +1,45 @@
+.NewsLetter {
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  padding: 80px 0;
+}
+
+.news-title {
+  font-size: 18px;
+  color: #3355ff;
+  font-weight: 600;
+}
+
+.newsletter-form input {
+  height: 55px;
+  padding: 0 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+}
+
+.subscribe-btn {
+  background: #111;
+  color: #fff;
+  height: 55px;
+  padding: 0 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background: #3355ff;
+}
+@media(max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+}

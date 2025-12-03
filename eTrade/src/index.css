@@ -1,0 +1,385 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #ffffff;
+}
+
+.dropdown-hover:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Animation */
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+  min-width: 300px;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.dropdown-item:hover {
+  background: #f4f6f9;
+}
+
+/* Arrow rotate */
+.dropdown-hover:hover .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+.dropdown-toggle::after {
+  transition: 0.3s ease;
+}
+
+/* Mobile click support */
+@media (max-width: 992px) {
+  .dropdown-hover:hover .dropdown-menu {
+    display: none;
+  }
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-menu {
+  margin-top: 0;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.Navbar,
+.banner {
+  background-color: #f9f3f0;
+}
+.Navbar,
+.banner,
+.countdown {
+  font-family: "DM Sans", sans-serif;
+}
+
+.product-price {
+  height: 100px;
+  width: 100px;
+}
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-wrapper {
+  display: flex;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+
+.big-img {
+  width: 600px;
+  z-index: 2;
+}
+
+.small-img {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  z-index: 1;
+}
+
+/* indicators */
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.indicator {
+  width: 35px;
+  height: 4px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #ff3e6c;
+}
+
+@media (max-width: 768px) {
+  .big-img {
+    width: 350px;
+  }
+
+  .small-img {
+    width: 130px;
+  }
+}
+
+.text-pink {
+  color: #ff497c;
+}
+.bg-pink {
+  background-color: #ff497c;
+}
+
+/* Category */
+.cat-tag {
+  color: #ff3e6c;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cat-heading {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 14px;
+  height: 170px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+}
+
+.cat-img {
+  width: 70px;
+}
+
+.cat-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.arrow-buttons {
+  display: flex;
+  gap: 10px;
+}
+.arrow {
+  color: #4e4d4d;
+}
+.arrow-btn {
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  background: #f2f2f2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow-btn:hover {
+  background: #ff3e6c;
+  color: white;
+}
+.light-bg {
+  background: #f4f7ff;
+  border-radius: 20px;
+  padding: 60px;
+  position: relative;
+}
+
+.promo-img-wrapper {
+  position: absolute;
+  right: 80px;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+/* Products Page */
+
+/* PRODUCT CARD */
+
+.product-card {
+  background: #ffffff;
+  border: none;
+  transition: 0.3s;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  border-radius: 15px;
+
+}
+
+
+/* IMAGE BOX CONTAINER */
+.product-img-box {
+  background: #f4f7ff;
+  height: 300px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IMAGES ANIMATION LOGIC */
+.main-img,
+.hover-img {
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  height: 100%;
+}
+
+/* Main Image: Visible initially */
+.main-img {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover Image: Hidden initially */
+.hover-img {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  z-index: 2;
+  width: 80%;
+}
+
+/* HOVER TRIGGERS */
+/* Note: Now targeting .product-card instead of .custom-card */
+.product-card:hover .main-img {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.product-card:hover .hover-img {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* BADGE */
+.badge-off {
+  background: #2a67ff;
+  color: white;
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 8px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 20;
+}
+
+/* OVERLAY BUTTONS */
+.overlay-buttons {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 10;
+}
+
+.product-card:hover .overlay-buttons {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.action-btn {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.action-btn:hover {
+  background: #2a67ff;
+  color: white;
+}
+.action-btn.primary {
+  background: #ff497c;
+  color: white;
+}
+
+/* OTHER UTILS */
+.arrow-btn {
+  width: 40px;
+  height: 40px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.arrow-btn:hover {
+  background: #2a67ff;
+  color: white;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #b2cfff;
+  border-radius: 50%;
+}
+.dot.active {
+  background: #2a67ff;
+}
+
+/* View All Button */
+.view-all-btn {
+  background-color: #f6f7fb;
+  color: #555;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s;
+}
+.view-all-btn:hover {
+  background-color: #e2e8f0;
+  color: #000;
+}
+
+
+/* Feedback */
+
