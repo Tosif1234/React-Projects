@@ -24,7 +24,7 @@ const Navbar = () => {
           </div>
 
           {/* MAIN NAVBAR */}
-          <nav className="navbar navbar-expand-lg bg-white shadow-sm px-4 py-3 rounded-4">
+          <nav className="navbar navbar-expand-lg bg-white shadow-sm px-4 py-3 rounded-4 ">
             <div className="container-fluid">
               {/* LOGO */}
               <a className="navbar-brand fw-bold text-primary d-flex align-items-center gap-1">
@@ -61,7 +61,7 @@ const Navbar = () => {
                     >
                       Shop <ChevronDown size={16} />
                     </a>
-                    <ul className="dropdown-menu shadow-lg py-3 px-2 rounded-3">
+                    <ul className="dropdown-menu shadow-lg py-1 px-2 rounded-3">
                       <li>
                         <a className="dropdown-item py-2" href="#">
                           Shop With Sidebar
@@ -138,7 +138,7 @@ const Navbar = () => {
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link">Contact</a>
+                    <a className="nav-link">About</a>
                   </li>
 
                   {/* 🔻 BLOG DROPDOWN */}
