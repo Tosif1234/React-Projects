@@ -9,6 +9,52 @@ body {
   visibility: visible;
 }
 
+.icon-li {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative; /* Zaroori hai pseudo-element positioning ke liye */
+  z-index: 1; /* Icon ko circle ke upar rakhne ke liye */
+  transition: 0.3s;
+  color: #292930;
+}
+
+/* The Circle Background (Hidden initially) */
+.icon-li::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #ff497c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: -1; /* Icon ke peeche */
+  transform: scale(0); /* Start hidden (small) */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.icon-li:hover::after {
+  transform: scale(1); /* Grow to full size */
+}
+
+/* Icon color change on hover (to contrast with pink bg) */
+.icon-li:hover {
+  color: white;
+}
+.cart-badge {
+  background-color: #3577f0 !important;
+  border: 2px solid #fff;
+  transform: translate(-82%, -6%);
+  font-size: 10px;
+  padding: 4px 6px;
+}
+
 /* Animation */
 .dropdown-menu {
   display: none;
@@ -38,25 +84,23 @@ body {
 .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
-  bottom: 1px;        /* distance below */
+  bottom: 1px; /* distance below */
   left: 15%;
   width: 0;
   height: 2px;
   background-color: #000;
-  transition: width .3s ease;
+  transition: width 0.3s ease;
 }
 
 /* Hover underline */
 .navbar-nav .nav-link:hover::after {
-  width: 40px;        /* short underline like screenshot */
+  width: 40px; /* short underline like screenshot */
 }
 
 /* Keep underline on active page (Home) */
 .navbar-nav .nav-link.active::after {
   width: 40px;
 }
-
-
 
 /* Arrow rotate */
 .dropdown-hover:hover .dropdown-toggle::after {
@@ -99,8 +143,21 @@ body {
 .countdown {
   font-family: "DM Sans", sans-serif;
 }
+.slide-bg-1 {
+  z-index: 1;
+  top: 10%;
+  left: 30%;
+}
+.slide-bg-2 {
+  z-index: -1;
+  top: 40%;
+  right: 22%;
+}
 
 .product-price {
+  top: 0;
+  z-index: 99;
+  left: 40%;
   height: 100px;
   width: 100px;
 }
@@ -123,13 +180,13 @@ body {
 
 .big-img {
   width: 600px;
-  z-index: 2;
+  z-index: 5;
 }
 
 .small-img {
   width: 200px;
   position: absolute;
-  right: 0;
+  right: -14%;
   bottom: 40px;
   z-index: 1;
 }

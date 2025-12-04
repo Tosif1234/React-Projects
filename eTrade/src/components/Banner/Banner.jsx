@@ -6,6 +6,8 @@ import img3 from "../../assets/others/author3.png";
 import img4 from "../../assets/others/author4.png";
 import product1 from "../../assets/products/product-38.png"
 import product2 from "../../assets/products/product-39.png"
+import slideBg1 from "../../assets/banner/shape-1.png"
+import slideBg2 from "../../assets/banner/shape-2.png"
 import {Flame , ShoppingBag ,Star,ShoppingCart} from 'lucide-react';
 
 const Banner = () => {
@@ -16,7 +18,7 @@ const Banner = () => {
 
   const [index, setIndex] = useState(0);
   return (
-    <div className="banner">
+    <div className="banner position-relative overflow-hidden">
       <div className="container py-5">
       <div className="row align-items-center">
 
@@ -87,15 +89,20 @@ const Banner = () => {
           }}
         >
           {slides.map((s, i) => (
-            <div className="slide" key={i}>
+            <div className="slide "key={i}>
 
-              <div className="product-price bg-white rounded-circle d-flex align-items-center     justify-content-center flex-column ">
-                <span className='text'>From</span>
-                <span className='price-amount text-primary fw-medium'>$49.00</span>
+              <div className="product-img position-relative">
+                <img src={s.big} alt="" className="big-img" />
+                <img src={s.small} alt="" className="small-img" />
+              </div>
+              
+              <div className="product-price position-absolute bg-white rounded-circle d-flex align-items-center justify-content-center flex-column ">
+                <span className='text text-secondary'>From</span>
+                <span className='price-amount text-primary fw-bold'>$49.00</span>
              </div>
-
-              <img src={s.big} alt="" className="big-img" />
-              <img src={s.small} alt="" className="small-img" />
+             {/* <div className="slide-bg-2 position-absolute">
+                <img src={slideBg2} alt="" />
+              </div> */}
             </div>
           ))}
         </div>
@@ -117,7 +124,11 @@ const Banner = () => {
         </div>
 
         </div>
-
+        {/* <img src={slideBg1} alt="" className="slide-bg-1" />
+        <img src={slideBg2} alt="" className="slide-bg-2" /> */}
+      {/* <div className="slide-bg-1 position-absolute">
+          <img src={slideBg1} alt="" />
+      </div> */}
       </div>
 
   )
