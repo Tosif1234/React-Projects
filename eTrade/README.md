@@ -98,4 +98,4 @@ git clone https://github.com/yourusername/ecommerce-ui.git
 ## 🧑‍💻 Author
 
 - Tosif Kureshi
-- Frontend Developer | React Developer | UI Designer
+- Frontend Developer | React Developer 

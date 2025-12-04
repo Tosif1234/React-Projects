@@ -144,7 +144,7 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 .slide-bg-1 {
-  z-index: 1;
+  z-index: -1;
   top: 10%;
   left: 30%;
 }
