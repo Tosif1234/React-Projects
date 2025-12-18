@@ -3,6 +3,7 @@
 
 A modern ReactJS CRM Dashboard for managing client records with full CRUD operations and LocalStorage-based data persistence.
 RecordFlow CRM provides a clean, responsive interface for adding, editing, deleting, and reviewing client information with instant real-time updates.
+
 ---
 
 ## 🚀 Features
