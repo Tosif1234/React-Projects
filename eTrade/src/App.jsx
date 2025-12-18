@@ -18,7 +18,6 @@ import NewsLetter from './components/NewsLetter/NewsLetter';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
