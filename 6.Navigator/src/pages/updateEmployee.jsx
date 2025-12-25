@@ -164,5 +164,3 @@ const UpdateEmployee = () => {
 };
 
 export default UpdateEmployee;
-
-////
