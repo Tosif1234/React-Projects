@@ -39,13 +39,13 @@ const AddEmployee = () => {
     alert("Employee Added Successfully!");
   };
 
-  // Compact Classes for No-Scroll
+  // Compact Classes
   const inputClass = "w-full pl-10 pr-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition-all text-sm";
   const labelClass = "text-[11px] font-bold text-gray-400 ml-1 uppercase tracking-wider";
   const iconWrapperClass = "absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-indigo-600";
 
   return (
-    // min-h-screen ko flex-col aur pt-16 (navbar height) diya hai taaki scroll na aaye
+    
     <div className="h-screen w-full pt-16 flex items-center justify-center bg-gray-50/50 overflow-hidden">
       <div className="w-full max-w-5xl px-4 animate-in fade-in duration-500">
         <div className="bg-white rounded-[2.5rem] shadow-xl p-6 md:p-10 border border-gray-100">

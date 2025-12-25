@@ -8,7 +8,6 @@ const ViewEmployee = () => {
     return data ? JSON.parse(data) : [];
   });
   
-  // Search term is removed as per request
 
   useEffect(() => {
     localStorage.setItem("UserData", JSON.stringify(employees));
@@ -27,10 +26,10 @@ const ViewEmployee = () => {
         
         <div className="bg-white rounded-[2.5rem] shadow-2xl shadow-slate-200/50 border border-slate-100 p-8 md:p-12 overflow-hidden">
           
-          {/* Header Section - Search Bar Removed */}
+          {/* Header Section */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 mb-12">
             <div className="space-y-2">
-              {/* Blue Line Accent remains on the left */}
+              
               <div className="flex items-center gap-3">
                 <span className="w-1.5 h-8 bg-indigo-600 rounded-full"></span>
                 <h1 className="text-3xl font-bold text-[#1e293b] tracking-tight">

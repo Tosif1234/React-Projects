@@ -151,39 +151,3 @@ const Home = () => {
 }
 
 export default Home;
-
-[
-  {
-    "eid": "EMP-302",
-    "name": "Arjun Sharma",
-    "email": "arjun.s@company.com",
-    "phone": "9876543210",
-    "department": "Engineering",
-    "designation": "Senior Full Stack Developer",
-    "salary": "95000",
-    "status": "Active",
-    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=256&h=256&fit=crop"
-  },
-  {
-    "eid": "EMP-405",
-    "name": "Priya Kapoor",
-    "email": "priya.k@company.com",
-    "phone": "9988776655",
-    "department": "Marketing",
-    "designation": "Creative Lead",
-    "salary": "82000",
-    "status": "Active",
-    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=256&h=256&fit=crop"
-  },
-  {
-    "eid": "EMP-101",
-    "name": "Dr. R.K. Verma",
-    "email": "rk.verma@company.com",
-    "phone": "9122334455",
-    "department": "Management",
-    "designation": "Chief Strategy Officer",
-    "salary": "155000",
-    "status": "Active",
-    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=256&h=256&fit=crop"
-  }
-]
