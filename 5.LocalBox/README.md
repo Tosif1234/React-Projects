@@ -8,21 +8,20 @@ RecordFlow CRM provides a clean, responsive interface for adding, editing, delet
 
 ## 🚀 Features
 
-- 👤 Add Client (Name, Email, Phone, Company, Role, Status)
+| Feature                         | Description                                                                    |
+| ------------------------------- | ------------------------------------------------------------------------------ |
+| 👤 **Add New Client**           | Create detailed client records with name, email, phone, company, role & status |
+| ✏️ **Edit Client Details**      | Modify existing records with pre-filled form fields                            |
+| 🗑️ **Delete Client**           | Remove a single client from the system instantly                               |
+| 🧹 **Wipe All Records**         | Clear entire LocalStorage data in one click                                    |
+| 💾 **LocalStorage Persistence** | Data remains available even after page refresh                                 |
+| 📊 **Live Dashboard**           | Shows total records, active clients & last added client                        |
+| ⚡ **Real-Time Updates**         | UI refreshes instantly without page reload                                     |
+| 🎨 **Modern Tailwind UI**       | Clean, responsive, dashboard-style design                                      |
+| 🧩 **Modular Components**       | Reusable & clean structure: Form, Row, List, Dashboard                         |
+| 📱 **Fully Responsive Layout**  | Seamless experience across mobile, tablet, desktop                             |
+| 🧠 **React Hooks**              | Built using useState, useEffect & controlled components                        |
 
-- ✏️ Edit Records with form auto-fill
-
-- 🗑️ Delete Single Record or Clear All Data
-
-- 📊 Live Dashboard (Total Records, Active Users, Last Added)
-
-- 🧠 LocalStorage Sync – Data refresh pe bhi save hota hai
-
-- 🎨 Beautiful CRM UI using TailwindCSS
-
-- ⚛️ Modular reusable components
-
-- 📱 Fully Responsive Layout
 
 ---
 
