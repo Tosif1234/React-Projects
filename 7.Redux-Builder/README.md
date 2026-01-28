@@ -46,7 +46,6 @@ src/
 └── App.js
 ```
 
-
 ---
 
 ## ⚙️ Installation & Setup
@@ -84,7 +83,11 @@ npm start
 
 ## 📸 Screenshots
 
-(Add screenshots here)
+### 🏠 Home Page
+![Home](./assets/1.png)
+
+### ✅ Task List View
+![Tasks](./assets/2.png)
 
 ---
 
