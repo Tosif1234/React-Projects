@@ -84,10 +84,10 @@ npm start
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](./assets/1.png)
+![Home](src/assets/1.png)
 
 ### ✅ Task List View
-![Tasks](./assets/2.png)
+![Tasks](src/assets/2.png)
 
 ---
 
