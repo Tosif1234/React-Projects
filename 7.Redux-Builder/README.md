@@ -1,16 +1,114 @@
-# React + Vite
+# 📝 Task Manager App (React + Redux Toolkit)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Task Manager application built using **React**, **Redux Toolkit**, and **Tailwind CSS**.  
+It allows users to add, toggle, and delete tasks with persistent storage using **LocalStorage**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- ➕ Add new tasks  
+- ✅ Mark tasks as completed / uncompleted  
+- 🗑 Delete tasks  
+- 💾 Persistent storage using LocalStorage  
+- 📊 Progress indicator (completed vs total tasks)  
+- 🎨 Beautiful UI with Tailwind CSS & Glassmorphism  
+- ⚡ Fast performance with Redux Toolkit  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React JS  
+- Redux Toolkit  
+- React Redux  
+- Tailwind CSS  
+- JavaScript (ES6+)  
+- LocalStorage API  
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── components/
+│   └── task/
+│       ├── Task.jsx
+│       ├── taskSlice.js
+│       └── localStorage.js
+│
+├── app/
+│   └── store.js
+│
+├── index.js
+└── App.js
+```
+
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository
+```
+git clone https://github.com/your-username/task-manager.git
+```
+2. Navigate to project folder  
+```
+cd task-manager
+```
+3. Install dependencies
+```
+npm install
+```
+4. Start development server
+```
+npm start
+```
+
+---
+
+## 🧠 How It Works
+
+- Redux store manages all tasks  
+- `taskSlice` handles:
+  - addTask  
+  - toggleTask  
+  - deleteTask  
+- Tasks are saved to LocalStorage whenever state changes  
+- On reload, tasks are loaded from LocalStorage  
+
+---
+
+## 📸 Screenshots
+
+(Add screenshots here)
+
+---
+
+## 📈 Future Enhancements
+
+- Edit task feature  
+- Due dates & reminders  
+- Categories / Labels  
+- Dark mode  
+- Drag & drop reordering  
+
+---
+
+## 👨‍💻 Author
+
+**Tosif Kureshi**  
+Frontend Developer (React JS)
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub and share it with others!
+
+
+
+
