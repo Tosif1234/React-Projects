@@ -1,125 +1,192 @@
-# API Hunter
+# 🛍️ VogueStore — API Hunter Project
 
-A modern React product showcase app that fetches real-time data from Fake Store API and displays it in a clean, animated, dark-mode-ready UI.
+A modern **React + Tailwind CSS e‑commerce UI** that fetches products from a live API and provides search, filtering, dark mode, and product detail preview.
 
-## Features
+Built as part of the **API Hunter assignment** to demonstrate API integration, state management, and responsive UI skills.
 
-- Live product fetching from `https://fakestoreapi.com/products`
-- Search by product title
-- Category-based filtering
-- Product detail modal with image, rating, description, and price
-- Dark/Light theme toggle
-- Skeleton loading states
-- API status bar with live result count
-- Smooth hover and entrance animations
-- Responsive layout for mobile, tablet, and desktop
+---
 
-## Tech Stack
+# 🚀 Live Features
 
-- React 19
-- Vite 7
-- Tailwind CSS 4
-- Lucide React Icons
+✅ Fetch products from FakeStore API
+✅ Real‑time search
+✅ Category filtering
+✅ Product detail modal
+✅ Dark / Light theme toggle
+✅ Responsive grid layout
+✅ Loading skeletons
+✅ Error handling
 
-## Project Structure
+---
 
-```txt
+# 🧠 Tech Stack
+
+* React (Hooks)
+* Tailwind CSS
+* Lucide Icons
+* FakeStore API
+* Vite
+
+---
+
+# 📦 API Used
+
+**FakeStore API**
+[https://fakestoreapi.com/products](https://fakestoreapi.com/products)
+
+Provides:
+
+* Product title
+* Image
+* Price
+* Category
+* Rating
+* Description
+
+---
+
+# 📁 Project Structure
+
+```
 src/
+  App.jsx
+  pages/
+    Home.jsx
+  hooks/
+    useProducts.js
   components/
     Navbar.jsx
     Hero.jsx
     CategoryBar.jsx
-    ProductGrid.jsx
     ProductCard.jsx
+    ProductGrid.jsx
     ProductModal.jsx
     StatusBar.jsx
-  hooks/
-    useProducts.js
-  pages/
-    Home.jsx
-  App.jsx
-  main.jsx
-  index.css
 ```
 
-## Getting Started
+---
 
-### 1. Clone the repository
-
-```bash
-git clone <your-repo-url>
-cd 8.API-Hunter
-```
-
-### 2. Install dependencies
+# ⚙️ Installation & Setup
 
 ```bash
+# clone repo
+git clone <your-repo-link>
+
+# install deps
 npm install
-```
 
-### 3. Start development server
-
-```bash
+# run dev server
 npm run dev
 ```
 
-Open the local URL shown in terminal (usually `http://localhost:5173`).
+App runs at:
 
-## Available Scripts
-
-- `npm run dev` - Start Vite development server
-- `npm run build` - Create production build
-- `npm run preview` - Preview production build locally
-- `npm run lint` - Run ESLint
-
-## API Used
-
-- Fake Store API: `https://fakestoreapi.com/products`
-
-## Theme Support
-
-This project uses class-based dark mode with Tailwind v4.
-
-- Toggle is handled in `src/pages/Home.jsx`
-- Tailwind dark variant is configured in `src/index.css`
-
-## Screenshots
-
-Add your screenshots in this section:
-
-- Home (Light)
-- Home (Dark)
-- Product Modal
-- Mobile View
-
-## Deployment
-
-You can deploy this project easily on:
-
-- Vercel
-- Netlify
-- GitHub Pages (with Vite static build)
-
-Build command:
-
-```bash
-npm run build
+```
+http://localhost:5173
 ```
 
-Output directory:
+---
 
-```txt
-dist
+# 🔍 How It Works
+
+### 1️⃣ API Fetching
+
+`useProducts` hook fetches product data and manages:
+
+* loading state
+* error state
+* products array
+
+---
+
+### 2️⃣ Search & Filter
+
+Products filtered using:
+
+```js
+const filteredProducts = products.filter(item =>
+  item.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
+  (selectedCategory === "All" || item.category === selectedCategory)
+);
 ```
 
-## Future Improvements
+---
 
-- Add cart and checkout flow
-- Add pagination or infinite scroll
-- Add sorting (price, rating, newest)
-- Persist theme in localStorage
-- Add unit tests and component tests
+### 3️⃣ Product Modal
 
-## License
+Clicking a product card opens a detailed modal view with:
 
-This project is open-source and available under the MIT License.
+* image
+* rating
+* description
+* price
+
+---
+
+### 4️⃣ Dark Mode
+
+Dark theme controlled via state and Tailwind `dark` class.
+
+---
+
+# 📱 Responsive Design
+
+Grid adapts automatically:
+
+* Mobile → 1 column
+* Tablet → 2 columns
+* Desktop → 4 columns
+
+---
+
+# 🎯 API Hunter Requirements — Covered
+
+| Requirement      | Status |
+| ---------------- | ------ |
+| API fetch        | ✅      |
+| Loading state    | ✅      |
+| Error handling   | ✅      |
+| Search           | ✅      |
+| Filter           | ✅      |
+| Responsive UI    | ✅      |
+| Clean components | ✅      |
+| UX polish        | ✅      |
+
+---
+
+# 📸 Screenshots
+
+### Home Page
+![Home](src/assets/1.png)
+
+### Product Grid
+
+![Home](src/assets/2.png)
+
+### Theme Chnage (Dark/Light)
+
+![Home](src/assets/3.png)
+
+### Product Description
+
+![Home](src/assets/4.png)
+
+
+
+Product Modal
+# ✨ Author
+
+**Tosif Kureshi**
+Frontend Developer (React / UI)
+
+---
+
+# 📜 License
+
+This project is for educational/demo purposes.
+
+---
+
+# ⭐ Acknowledgement
+
+FakeStore API for demo product data.
