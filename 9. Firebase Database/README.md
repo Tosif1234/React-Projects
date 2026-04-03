@@ -21,7 +21,7 @@ This application allows you to **manage products in real-time**, track inventory
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](./assets/1.png)
+![Dashboard Screenshot](./src/assets/1.png)
 
 
 ---
@@ -191,3 +191,4 @@ Feel free to modify and improve 🚀
 Made with ❤️ by **Tosif**
 
 ---
+
