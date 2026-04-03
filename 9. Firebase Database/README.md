@@ -18,6 +18,14 @@ This application allows you to **manage products in real-time**, track inventory
 
 ---
 
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](./assets/1.png)
+
+
+---
+
 ## 🛠️ Tech Stack
 
 * ⚛️ React 19
