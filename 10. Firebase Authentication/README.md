@@ -6,22 +6,6 @@ This project demonstrates a complete auth flow including **signup, login, Google
 
 ---
 
-## 📸 Screenshots
-
-### 🔑 Login Page
-
-![Login Page](./src/assets/LoginPage.png)
-
-### 🔁 Forgot Password
-
-![Forgot Password](./src/assets/Forget-Password.png)
-
-### 👤 Dashboard / Profile
-
-![Dashboard](./src/assets/Profile.png)
-
----
-
 ## ✨ Features
 
 * 🔐 Email & Password Signup
@@ -67,6 +51,22 @@ src/
 ├── main.jsx
 └── index.css
 ```
+
+---
+
+## 📸 Screenshots
+
+### 🔑 Login Page
+
+![Login Page](./src/assets/LoginPage.png)
+
+### 🔁 Forgot Password
+
+![Forgot Password](./src/assets/Forget-Password.png)
+
+### 👤 Dashboard / Profile
+
+![Dashboard](./src/assets/Profile.png)
 
 ---
 
