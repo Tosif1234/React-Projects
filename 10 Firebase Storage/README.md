@@ -1,116 +1,40 @@
 # 📂 Digital Document Manager (DocVault)
 
-A modern, industry-ready **Digital Document Management System** built using **React.js, Redux Toolkit, and Firebase Storage**.
+A modern and fully functional **Document Management System** built using React, Redux Toolkit, Tailwind CSS, and Firebase Storage.
 
-This application allows users to securely upload, manage, preview, update, and delete digital documents such as PDFs, images, resumes, certificates, and reports — all with real-time UI updates.
-
----
-
-## 🚀 Overview
-
-DocVault is a clean and scalable file management dashboard designed for real-world use cases like:
-
-* 📚 College document systems
-* 🏢 Office file management
-* 👨‍💼 Resume & certificate storage
-
-It combines **Redux async state management** with **Firebase cloud storage** to deliver a seamless experience.
+This project demonstrates a complete file management workflow including **upload, preview, update, delete, search, and filtering**, all wrapped in a clean and responsive dashboard UI.
 
 ---
 
-## ✨ Core Features
+## ✨ Features
 
-### 📤 Upload Documents
-
-* Upload PDFs, images, certificates, resumes, and reports
-* Stores:
-
-  * File name
-  * File type
-  * Upload date
-  * File size
-  * Download URL
-
----
-
-### 📄 View Documents
-
-* Display files in card/table layout
-* File preview (images/PDF)
-* Download option
-* Upload timestamp
+* 📤 Upload documents (PDF, images, resumes, certificates)
+* 📄 View files in dashboard layout
+* 👀 File preview (images & PDFs)
+* 🔗 Download files instantly
+* ✏️ Update file metadata (name, category, description)
+* ❌ Delete files with real-time UI update
+* 🔍 Search files by name
+* 🎯 Filter by file type & category
+* ⚡ Real-time UI sync using Redux Toolkit
+* 📱 Fully responsive UI (Tailwind CSS)
 
 ---
 
-### ✏️ Update File Details
+## 🛠️ Tech Stack
 
-* Rename file (metadata-based)
-* Add category (Personal / Academic / Office / Certificates)
-* Add description
-
----
-
-### ❌ Delete Documents
-
-* Remove file from Firebase Storage
-* Instant Redux UI update (no refresh required)
-
----
-
-### 🔍 Search & Filter
-
-* Search by file name
-* Filter by:
-
-  * File type
-  * Upload date
-  * Category
-
----
-
-### ⚡ Real-Time UI Sync
-
-* Redux Toolkit + Thunk ensures:
-
-  * instant UI updates
-  * loading states
-  * error handling
-
----
-
-## 📚 Use Case Example
-
-* 🎓 Students upload certificates
-* 👨‍🏫 Faculty upload reports
-* 🧑‍💼 Admin downloads and verifies documents
-
----
-
-## 🛠 Tech Stack
-
-* ⚛️ React.js (Frontend)
-* 🧠 Redux Toolkit (State Management)
-* ☁️ Firebase Storage (Cloud File Storage)
-* 🗄 Firebase Realtime DB / Firestore (Metadata)
-* 🎨 Tailwind CSS (UI Styling)
-* 🚀 Vercel / Firebase Hosting (Deployment)
-
----
-
-## 🔥 Redux Modules
-
-* `uploadFile`
-* `fetchFiles`
-* `deleteFile`
-* `updateFile`
-* `loadingState`
-* `errorHandling`
+* ⚛️ React 19
+* ⚡ Vite 7
+* 🧠 Redux Toolkit (Thunk Middleware)
+* ☁️ Firebase Storage
+* 🗄 Firebase Realtime DB / Firestore (for metadata)
+* 🎨 Tailwind CSS 4
 
 ---
 
 ## 📂 Project Structure
 
-```bash
+```bash id="d7a2kf"
 src/
 ├── app/
 │   └── store.js
@@ -129,19 +53,47 @@ src/
 
 ---
 
-## ⚙️ Getting Started
+## 📸 Screenshots
 
-### 1️⃣ Install Dependencies
+### 📤 Upload & Dashboard
 
-```bash
+![Dashboard](./src/assets/Dashboard.png)
+
+---
+
+
+## 🚀 Getting Started
+
+### 📌 Prerequisites
+
+* Node.js (v18+ recommended)
+* npm
+* Firebase account
+
+---
+
+### 📦 1. Install Dependencies
+
+```bash id="r2m9df"
 npm install
 ```
 
-### 2️⃣ Setup Firebase
+---
+
+### 🔥 2. Firebase Setup
+
+1. Go to Firebase Console
+2. Create a new project
+3. Enable **Storage**
+4. (Optional) Enable Realtime Database / Firestore
+
+---
+
+### 🔐 3. Environment Variables
 
 Create `.env` file:
 
-```env
+```env id="k92fla"
 VITE_API_KEY=your_api_key
 VITE_AUTH_DOMAIN=your_project.firebaseapp.com
 VITE_PROJECT_ID=your_project_id
@@ -150,72 +102,78 @@ VITE_STORAGE_BUCKET=your_bucket
 
 ---
 
-### 3️⃣ Run Project
+### ▶️ 4. Run the App
 
-```bash
+```bash id="h3k9ds"
 npm run dev
+```
+
+Open in browser:
+
+```bash id="x7s9ka"
+http://localhost:5173
 ```
 
 ---
 
-## 🔁 How File Update Works
+## 🔄 File Management Flow
 
-⚠️ Firebase Storage does not support direct file editing.
-
-So update works like:
-
-* Metadata → update in database
-* File → delete old file + upload new file
-
----
-
-## 🚀 Advanced Features (Planned / Optional)
-
-* 📊 Upload progress bar
-* 🖱 Drag & drop upload
-* 👤 User authentication (Firebase Auth)
-* 🔐 Role-based access (Admin/User)
-* 📁 Folder system
-* 📈 File analytics
+1. User uploads a file 📤
+2. File stored in Firebase Storage ☁️
+3. Metadata saved in database 🗄
+4. Redux updates UI instantly ⚡
+5. User can preview, download, update or delete
 
 ---
 
-## 💡 Why This Project Stands Out
+## 🔁 File Update Logic
 
-* Real-world architecture
-* Redux async handling
-* Cloud storage integration
-* Clean UI/UX design
-* Scalable for production
+⚠️ Firebase limitation:
 
----
+❌ Direct file editing not possible
 
-## 🎯 Interview Explanation
+✅ Solution used:
 
-> Built a Digital Document Manager using React, Redux Toolkit, and Firebase Storage, implementing async file operations with real-time UI updates, metadata management, and secure cloud storage.
+* Metadata → updated in database
+* File → delete old + upload new
 
 ---
 
-## 🧑‍💻 Author
+## 📦 Available Scripts
 
-**Tosif Kureshi**
-
----
-
-## 📌 Reference
-
-This README is inspired and enhanced from your original project base:
-
+```bash id="n4l9dp"
+npm run dev      # Start development server
+npm run build    # Production build
+npm run preview  # Preview build
+npm run lint     # Run ESLint
+```
 
 ---
 
-## ⭐ Future Scope
+## 🧠 Learning Highlights
 
-* Convert into SaaS product
-* Multi-user collaboration
-* AI-based document tagging
+This project showcases:
+
+* Redux Toolkit async operations
+* Firebase Storage integration
+* Real-time UI updates
+* File handling in React
+* Scalable project architecture
+* Clean dashboard UI design
 
 ---
 
-🔥 **Pro Tip:**
-Deploy this on Vercel + add authentication → this becomes a *job-ready portfolio project*.
+## ⚠️ Notes
+
+* Firebase Storage must be enabled
+* Metadata storage required for advanced features
+* File update requires re-upload (Firebase limitation)
+
+---
+
+## 🙌 Author
+
+Made with ❤️ by **Tosif**
+
+---
+
