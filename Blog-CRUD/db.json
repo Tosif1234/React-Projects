@@ -1,0 +1,70 @@
+{
+  
+  "posts": [
+    {
+      "id": "1",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800",
+      "title": "Getting Started with React in 2026",
+      "description": "React is still one of the most popular JavaScript libraries for building user interfaces. In 2026, developers are focusing more on performance, reusable components, and clean architecture. Understanding hooks like useState and useEffect is essential for building dynamic applications. By practicing small projects, you can quickly gain confidence and improve your frontend development skills.",
+      "date": "2026-04-05",
+      "category": "Tech",
+      "userId": "u1",
+      "authorName": "Tosif Kureshi",
+      "popularity": 87
+    },
+    {
+      "id": "3",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800",
+      "title": "Simple Habits for a Healthy Lifestyle",
+      "description": "Living a healthy lifestyle is not about strict diets or intense workouts. It’s about making small, consistent changes in your daily routine. Drinking enough water, eating balanced meals, and getting proper sleep can make a huge difference. Regular exercise and mental relaxation also play an important role in overall well-being. Start small and stay consistent for long-term results.",
+      "date": "2026-04-07",
+      "category": "Health",
+      "userId": "u2",
+      "authorName": "Jhon Snow",
+      "popularity": 61
+    },
+    {
+      "id": "WTCiilqPzpU",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800",
+      "title": "Top Smartphone Trends in 2026",
+      "description": "Smartphones are evolving faster than ever with new technologies being introduced every year. In 2026, we are seeing advancements like AI-powered cameras, foldable screens, and faster processors. Brands are focusing on better battery life and seamless user experience. With 5G becoming standard, mobile connectivity has reached a new level. Choosing the right smartphone now depends on both performance and innovation.",
+      "date": "2026-04-21",
+      "category": "SmartPhone",
+      "userId": "u1",
+      "authorName": "Tosif Kureshi",
+      "popularity": 94
+    },
+    {
+      "id": "XRm8awiuQzs",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800",
+      "title": "Mastering JavaScript for Modern Web Apps",
+      "description": "JavaScript is the foundation of modern web development and continues to grow rapidly. To master it, developers must understand core concepts like closures, promises, and asynchronous programming. Writing clean and optimized code is equally important for performance. Frameworks like React and Node.js make JavaScript even more powerful. Consistent practice and real-world projects are the key to becoming an expert.",
+      "date": "2026-04-01",
+      "category": "Tech",
+      "userId": "R7Sp6Cc-9fo",
+      "authorName": "Tosif Kureshi",
+      "popularity": 99
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "name": "Tosif Kureshi",
+      "email": "tosif@example.com",
+      "password": "tosif123"
+    },
+    {
+      "id": "u2",
+      "name": "Jhon Snow",
+      "email": "Jhon@example.com",
+      "password": "Jhon123"
+    },
+    {
+      "name": "Tosif Kureshi",
+      "email": "tosifkureshi282@gmail.com",
+      "password": "Tosif12",
+      "id": "R7Sp6Cc-9fo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
